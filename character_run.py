@@ -26,11 +26,10 @@ def run_circle():
 def run_rectangle():
     print('REACTANGLE')
     # while 문보다는 for문이 가독성이 좋고 편하다
-    # bottom line 이동
     for x in range (50, 750, 10):
         render_all(x, 90)
-    # up line 이동
-    # for x in range (750, 50, -10):
+    for x in range (750, 50, -10):
+        render_all(x, 540)
 
 while True:
     # run_circle()
