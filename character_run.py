@@ -28,6 +28,8 @@ def run_rectangle():
     # while 문보다는 for문이 가독성이 좋고 편하다
     for x in range (50, 750, 10):
         render_all(x, 90)
+    for y in range (90, 540, 10):
+        render_all(750, y)
     for x in range (750, 50, -10):
         render_all(x, 540)
 
