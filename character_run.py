@@ -16,9 +16,12 @@ def run_circle():
         grass.draw_now(400,30)
         character.draw_now(x,y)
         delay(0.01)
+
+# test_need_time : 길수록 시간이 낭비 되는 것
         
 def run_rectangle():
     print('REACTANGLE')
+    
     pass
 
 while True:
