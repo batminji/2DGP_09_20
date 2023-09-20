@@ -18,14 +18,20 @@ def run_circle():
         delay(0.01)
 
 # test_need_time : 길수록 시간이 낭비 되는 것
+# 주석처리를 해서 이미 내가 처리한 코드에 대해서 또 테스트할 필요가 없다.
         
 def run_rectangle():
     print('REACTANGLE')
-    
-    pass
+    # while 문보다는 for문이 가독성이 좋고 편하다
+    # bottom line 이동
+    for x in range (50, 750, 10):
+        clear_canvas_now()
+        grass.draw_now(400,30)
+        character.draw_now(x,90)
+        delay(0.01)
 
 while True:
-    run_circle()
+    # run_circle()
     run_rectangle()
     break
 
